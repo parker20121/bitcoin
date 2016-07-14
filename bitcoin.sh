@@ -1,4 +1,4 @@
-# ensure bitcoin_filter.py has the proper permissions
+# Ensure bitcoin_filter.py has the proper executable permissions.
 
 hadoop jar [path to hadoop_streaming.jar] \
         -jobconf mapred.reduce.tasks=0 \
