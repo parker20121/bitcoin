@@ -1,5 +1,11 @@
+#
 # Ensure bitcoin_filter.py has the proper executable permissions.
-
+#
+# Parameters
+# ==========
+# input/output point to HDFS locations
+# file points to local files
+#
 hadoop jar [path to hadoop_streaming.jar] \
         -jobconf mapred.reduce.tasks=0 \
 	-mapper "python bitcoin_filter.py" \
